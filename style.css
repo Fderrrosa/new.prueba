@@ -75,14 +75,11 @@
     font-style: italic;
 }
 
-.info-piedras:hover{
+.info-piedras{
     background-color: rgb(157, 139, 193);
     border-radius: 10px;
     font-size:large ;
     font-style: italic;
-    transform: scale(1);
-    transition: all 2s;
-
 }
 
 
