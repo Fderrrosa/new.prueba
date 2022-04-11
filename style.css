@@ -181,6 +181,7 @@
     margin: 50px;
     color: #000;  
     grid-area: boton-1;
+    border-radius: 30px;
 }
 
 .parrafo{
