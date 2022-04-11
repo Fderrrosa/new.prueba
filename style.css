@@ -219,14 +219,14 @@
     grid-column-gap: 5px;                
 }
 
-.centro-1:hover{
+.centro-1{
     grid-area: centro-1;
     text-align: justify;
     margin: 10%;
     
   
 }
-.centro-2:hover{
+.centro-2{
     grid-area: centro-2;
     text-align: justify;
     margin: 10%;
