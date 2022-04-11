@@ -79,7 +79,7 @@
     background-color: rgb(155, 112, 114);
     border-radius: 10px;
     font-size: x-large;
-    transform: scale(4);
+    transform: scale(2);
     transition: all 2s;
 
 }
