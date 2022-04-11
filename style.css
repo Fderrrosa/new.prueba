@@ -215,11 +215,15 @@
     grid-area: centro-1;
     text-align: justify;
     margin: 10%;
+    
+  
 }
 .centro-2{
     grid-area: centro-2;
     text-align: justify;
     margin: 10%;
+    
+   
 }
 .parte-derecha{
     grid-area: parte-derecha;
