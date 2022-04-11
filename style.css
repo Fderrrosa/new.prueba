@@ -223,20 +223,14 @@
     grid-area: centro-1;
     text-align: justify;
     margin: 10%;
-    border-radius: 20px;
-    background-color: aqua;
-    transition: all 2s;
-    transform: scale(2);
+    
   
 }
 .centro-2:hover{
     grid-area: centro-2;
     text-align: justify;
     margin: 10%;
-    border-radius: 20px;
-    background-color: aqua;
-    transition: all 2s;
-    transform: scale(2);
+    
    
 }
 .parte-derecha{
