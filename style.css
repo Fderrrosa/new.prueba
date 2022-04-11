@@ -219,16 +219,24 @@
     grid-column-gap: 5px;                
 }
 
-.centro-1{
+.centro-1:hover{
     grid-area: centro-1;
     text-align: justify;
     margin: 10%;
+    border-radius: 40px;
+    background-color: aqua;
+    transition: all 2s;
+    transform: scale(4);
   
 }
-.centro-2{
+.centro-2:hover{
     grid-area: centro-2;
     text-align: justify;
     margin: 10%;
+    border-radius: 40px;
+    background-color: aqua;
+    transition: all 2s;
+    transform: scale(4);
    
 }
 .parte-derecha{
