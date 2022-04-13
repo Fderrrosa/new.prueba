@@ -75,11 +75,13 @@
     font-style: italic;
 }
 
-.info-piedras{
+.info-piedras:hover{
     background-color: rgb(157, 139, 193);
     border-radius: 10px;
     font-size:large ;
     font-style: italic;
+    transform: scale(1);
+    transition: all 2s;
 }
 
 
@@ -153,8 +155,8 @@
 
 .contiene-todo{
     display: grid;
-    grid-template-areas: "boton-1 fotos-2 fotos-2 fotos-2"
-                        "boton-1 parrafo parrafo parrafo"
+    grid-template-areas: "boton-1 ......................."
+                        "boton-1 ........................"
                         "boton-1 ......................."
                         "boton-1 .......................";
     grid-template-columns: 3fr 3fr 3fr 3fr;
@@ -175,26 +177,36 @@
     text-decoration: none;
     border-width: initial;
     padding-bottom: 10px;
-    margin: 50px;
-    color: #000;  
+    margin: 30px;
+    color: rgb(7, 0, 0);  
     grid-area: boton-1;
+    border: 3px solid rgb(13, 4, 5);
+    background-color: rgba(224, 183, 122, 0.858);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 30px;
+    
+
 }
 
 .parrafo{
     grid-area: parrafo;
 }
 
-.aber{
-    
-    width: 50%;    
-}
 
-.fotos-2{
-    max-width: 100%;
-    max-height: 100%;
-    grid-area: intento;
-    transition: all 2s;
+.intento{
+    width: 20px;
+    margin: 10%;
+    padding: auto;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    height: 50px;
+    grid-column-gap: 40px; 
 }
+ 
+
+
 
 
 
@@ -239,16 +251,6 @@
 
 
 
-.intento{
-  width: 300px;
-  margin: 10%;
-  padding: auto;
-  display: grid;
-  grid-template-columns: 3fr 3fr 3fr;
-  height: 50px;
-  
-
-}
 
 
 
