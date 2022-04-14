@@ -155,8 +155,8 @@
 
 .contiene-todo{
     display: grid;
-    grid-template-areas: "boton-1 fotos-2 fotos-2 fotos-2"
-                        "boton-1 parrafo parrafo parrafo"
+    grid-template-areas: "boton-1 ......................."
+                        "boton-1 ........................"
                         "boton-1 ......................."
                         "boton-1 .......................";
     grid-template-columns: 3fr 3fr 3fr 3fr;
@@ -177,33 +177,36 @@
     text-decoration: none;
     border-width: initial;
     padding-bottom: 10px;
-    margin: 50px;
-    color: #000;  
+    margin: 30px;
+    color: rgb(7, 0, 0);  
     grid-area: boton-1;
-    border-radius: 40px;
-    background-color: rgb(158, 92, 44);
+    border: 3px solid rgb(13, 4, 5);
+    background-color: rgba(224, 183, 122, 0.858);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 30px;
+    
+
 }
 
 .parrafo{
     grid-area: parrafo;
 }
 
-.aber{
-    
-    width: 50%;    
-}
 
-.aber img:hover{
-    transform: scale(2);
-
+.intento{
+    width: 20px;
+    margin: 10%;
+    padding: auto;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    height: 50px;
+    grid-column-gap: 40px; 
 }
+ 
 
-.fotos-2{
-    max-width: 100%;
-    max-height: 100%;
-    grid-area: fotos-2;
-    transition: all 2s;
-}
+
 
 
 
@@ -213,9 +216,9 @@
 
 .cont-grande{
     display: grid;
-    grid-template-areas: "centro-1 centro-1 parte-derecha"
-                          "centro-2 centro-2 parte-derecha"
-                          "footer footer parte-derecha";
+    grid-template-areas: "centro-1 centro-1 parte-derecha,"
+                          "centro-2 centro-2 parte-derecha,"
+                          "footer footer parte-derecha,";
     grid-template-columns: 1fr 1fr 1fr;     
     grid-column-gap: 5px;                
 }
@@ -224,15 +227,11 @@
     grid-area: centro-1;
     text-align: justify;
     margin: 10%;
-    
-  
 }
 .centro-2{
     grid-area: centro-2;
     text-align: justify;
     margin: 10%;
-    
-   
 }
 .parte-derecha{
     grid-area: parte-derecha;
@@ -247,5 +246,13 @@
     max-width: min-content;
     max-height: min-content;
 }
+
+
+
+
+
+
+
+
 
 
