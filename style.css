@@ -44,7 +44,10 @@
     color: mediumaquamarine;
 }
 
+.carrousel-texto{
+    color: #000;
 
+}
 
 
 /*MAIN*/
@@ -118,7 +121,7 @@
     background-color: #000;
     display: grid;
     grid-template-areas: "cont-sub3 ................  mapa";
-    grid-template-columns: 3fr ...................... 3fr ;
+    grid-template-columns: 3fr 3fr ;
     grid-column-gap: 100px ;  
 }
 
@@ -248,7 +251,12 @@
     text-align: justify;
     text-decoration: underline;
     font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration-line: none;
 }
+
+
+
 
 
 
@@ -259,18 +267,4 @@
     max-width: min-content;
     max-height: min-content;
 }
-
-.foto-servicios{
- 
-
-
-
-
-
-.carrousel-texto{
-    color: #000;
-
-}
-
-
 
