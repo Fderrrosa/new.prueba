@@ -121,12 +121,15 @@
 
 .parrafo{
     font-size: medium;
-    font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+    font-family: 'Times New Roman', Times, serif;
     grid-area: parrafo;
 }
 
+.footer-mapa{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration-line: underline;
+
+}
 
 
 
