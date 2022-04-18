@@ -249,6 +249,9 @@
     text-decoration: underline;
     font-size: larger;
 }
+
+
+
 .footer{
     grid-area: footer; 
     display: flex;
@@ -257,16 +260,8 @@
     max-height: min-content;
 }
 
-
-.foto{
-    margin: auto;
-    display: flex;
-   display: block;
-   display: inline-flexbox;
-  
-}
-
-
+.foto-servicios{
+ 
 
 
 
