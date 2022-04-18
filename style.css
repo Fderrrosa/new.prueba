@@ -118,8 +118,8 @@
     background-color: #000;
     display: grid;
     grid-template-areas: "cont-sub3 ................  mapa";
-    grid-template-columns: 3fr ...................... 3fr;
-    grid-column-gap:100px;  
+    grid-template-columns: 3fr ...................... 3fr ;
+    grid-column-gap: 100px ;  
 }
 
 .parrafo{
@@ -148,17 +148,17 @@
 .caja-grande{
     text-align: right;
     color: #000;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
 }
 .caja-mediana{
     color: black;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
     margin: 30px;
 }
 .segundo-sub{
     text-align: left;
     color: #000;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
     text-decoration-line: underline;
 }
 
@@ -177,7 +177,7 @@
 .lista{
     text-align: left;  
     color: #000;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
     list-style: none;
     
 }
@@ -256,6 +256,16 @@
     max-width: min-content;
     max-height: min-content;
 }
+
+
+.foto{
+    margin: auto;
+    display: flex;
+   display: block;
+   display: inline-flexbox;
+  
+}
+
 
 
 
