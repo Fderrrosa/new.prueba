@@ -246,20 +246,21 @@
     grid-area: centro-1;
     text-align: justify;
     margin: 10%;
-    
+      
 }
 .centro-2{
     grid-area: centro-2;
     text-align: justify;
     margin: 10%;
 }
-.parte-derecha{
+.parte-derecha:hover{
     grid-area: parte-derecha;
     text-align: justify;
     text-decoration: underline;
     font-size: larger;
     font-family: 'Times New Roman', Times, serif;
     text-decoration-line: none;
+    transition:2s linear;
 }
 
 .tarot{
@@ -269,11 +270,32 @@
     
 }
 
-.parrafo{
-    transform: scale(1);
-    transition: all 2s;
-}
 
+
+
+@media screen and (max-width: 600px) {
+    .secciones {
+        /*display:block;
+        float:left;
+        padding:0 10px;*/
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+
+    .contenedor-2 {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+
+
+}
 
 
 
