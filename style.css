@@ -81,7 +81,7 @@
 }
 
 .info-piedras:hover{
-    background-color: rgb(157, 139, 193);
+    background-color: rgba(188, 162, 44, 0.708);
     border-radius: 10px;
     font-size:large ;
     font-style: italic;
@@ -143,7 +143,13 @@
 
 /*MAIN*/
 
+.prueba{
+    font-weight: 100;
+    margin: 50px;
+    font-size: x-large;
+}
 .sub-mayor {
+   
     text-align: center;
     color: black;
     font-family: 'Times New Roman', Times, serif
@@ -240,6 +246,7 @@
     grid-area: centro-1;
     text-align: justify;
     margin: 10%;
+    
 }
 .centro-2{
     grid-area: centro-2;
@@ -255,16 +262,18 @@
     text-decoration-line: none;
 }
 
-
-
-
-
-
-.footer{
-    grid-area: footer; 
-    display: flex;
-    justify-items: auto;
-    max-width: min-content;
-    max-height: min-content;
+.tarot{
+    max-width: 100%;
+    max-height: 100%;
+    border:1px solid black;
+    
 }
+
+.parrafo{
+    transform: scale(1);
+    transition: all 2s;
+}
+
+
+
 
