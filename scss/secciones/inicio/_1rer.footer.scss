@@ -1,0 +1,36 @@
+.segundo-titulo{
+    width: 100px;
+    height: 100px;
+    margin: 1em;
+    text-decoration-line: underline;
+    color: mediumaquamarine;
+}
+
+
+.cont-sub3{
+    grid-area: cont-sub3;
+}
+.mapa{
+    grid-area: mapa;
+}
+
+.contenedor-grande-3{
+    color: aliceblue;
+    background-color: #000;
+    display: grid;
+    grid-template-areas: "cont-sub3 ................  mapa";
+    grid-template-columns: 3fr 3fr ;
+    grid-column-gap: 100px ;  
+}
+
+.parrafo{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.footer-mapa{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration-line: underline;
+
+}
