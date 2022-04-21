@@ -1,17 +1,244 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import '../scss/inicio/1rer.main';
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\style.scss 2:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import '../scss/inicio/1rer.main';\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\style.scss 2:9  root stylesheet";
+.home {
+  background-color: mediumaquamarine;
 }
+
+.principal {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  font-size: 20px;
+}
+
+.titulo-header {
+  color: mediumaquamarine;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  display: flex;
+  justify-content: space-around;
+}
+
+.secciones {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.secciones-2 {
+  margin: 0 1em 0 1em;
+}
+
+.links-dea {
+  text-decoration: none;
+  color: mediumaquamarine;
+}
+
+.carrousel-texto {
+  color: #000;
+}
+
+.cont-imagen {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.contenedor-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.titulo-main {
+  width: 100px;
+  height: 100px;
+  margin: 1em;
+  text-decoration-line: underline;
+}
+
+.otro-titulo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  font-style: italic;
+}
+
+.info-piedras:hover {
+  background-color: rgba(188, 162, 44, 0.708);
+  border-radius: 10px;
+  font-size: large;
+  font-style: italic;
+  transform: scale(1);
+  transition: all 2s;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.texto-video {
+  font-size: 1rem;
+  margin: 5em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.segundo-titulo {
+  width: 100px;
+  height: 100px;
+  margin: 1em;
+  text-decoration-line: underline;
+  color: mediumaquamarine;
+}
+
+.cont-sub3 {
+  grid-area: cont-sub3;
+}
+
+.mapa {
+  grid-area: mapa;
+}
+
+.contenedor-grande-3 {
+  color: aliceblue;
+  background-color: #000;
+  display: grid;
+  grid-template-areas: "cont-sub3 ................  mapa";
+  grid-template-columns: 3fr 3fr;
+  grid-column-gap: 100px;
+}
+
+.parrafo {
+  font-size: medium;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.footer-mapa {
+  font-family: "Times New Roman", Times, serif;
+  text-decoration-line: underline;
+}
+
+.prueba {
+  font-weight: 100;
+  margin: 50px;
+  font-size: x-large;
+}
+
+.sub-mayor {
+  text-align: center;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.caja-grande {
+  text-align: right;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.caja-mediana {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  margin: 30px;
+}
+
+.segundo-sub {
+  text-align: left;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration-line: underline;
+}
+
+.contiene-todo {
+  display: grid;
+  grid-template-areas: "boton-1 ......................." "boton-1 ........................" "boton-1 ......................." "boton-1 .......................";
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-column-gap: 100px;
+}
+
+.lista {
+  text-align: left;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  list-style: none;
+}
+
+.boton-1 {
+  text-decoration: none;
+  border-width: initial;
+  padding-bottom: 10px;
+  margin: 30px;
+  color: rgb(7, 0, 0);
+  grid-area: boton-1;
+  border: 3px solid #0d6efd;
+  background-color: whitesmoke;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 30px;
+}
+
+.intento {
+  width: 20px;
+  margin: 10%;
+  padding: auto;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  height: 50px;
+  grid-column-gap: 40px;
+}
+
+.cont-grande {
+  display: grid;
+  grid-template-areas: "centro-1 centro-1 parte-derecha" "centro-2 centro-2 parte-derecha" "footer footer parte-derecha";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+}
+
+.centro-1 {
+  grid-area: centro-1;
+  text-align: justify;
+  margin: 10%;
+}
+
+.centro-2 {
+  grid-area: centro-2;
+  text-align: justify;
+  margin: 10%;
+}
+
+.parte-derecha:hover {
+  grid-area: parte-derecha;
+  text-align: justify;
+  text-decoration: underline;
+  font-size: larger;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration-line: none;
+  transition: 2s linear;
+}
+
+.tarot {
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .secciones {
+    /*display:block;
+    float:left;
+    padding:0 10px;*/
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .contenedor-2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
