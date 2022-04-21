@@ -1,3 +1,6 @@
+@import '../../base/listas';
+
+
 .prueba{
     font-weight: 100;
     margin: 50px;
@@ -6,22 +9,22 @@
 .sub-mayor {
    
     text-align: center;
-    color: black;
+    color: nth($colores, 4);
     font-family: 'Times New Roman', Times, serif
 }
 .caja-grande{
     text-align: right;
-    color: #000;
+    color: nth($colores, 4);
     font-family: 'Times New Roman', Times, serif;
 }
 .caja-mediana{
-    color: black;
+    color: nth($colores, 4);
     font-family: 'Times New Roman', Times, serif;
     margin: 30px;
 }
 .segundo-sub{
     text-align: left;
-    color: #000;
+    color: nth($colores, 4);
     font-family: 'Times New Roman', Times, serif;
     text-decoration-line: underline;
 }
@@ -40,7 +43,7 @@
 
 .lista{
     text-align: left;  
-    color: #000;
+    color: nth($colores, 4);
     font-family: 'Times New Roman', Times, serif;
     list-style: none;
     
@@ -52,10 +55,10 @@
     border-width: initial;
     padding-bottom: 10px;
     margin: 30px;
-    color: rgb(7, 0, 0);  
+    color: nth($colores, 4);  
     grid-area: boton-1;
-    border: 3px solid #0d6efd;
-    background-color: whitesmoke;
+    border: 3px solid nth($colores, 3 );
+    background-color: nth($colores, 5);
     border-top-left-radius: 20px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 50px;
