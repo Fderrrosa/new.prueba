@@ -15,7 +15,7 @@
 
 
 .contenedor-2{
-    display: grid;
+    @include display (grid);
     grid-template-columns: 1fr 1fr ;
 }
 

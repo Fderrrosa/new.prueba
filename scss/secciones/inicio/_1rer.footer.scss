@@ -19,7 +19,7 @@
 .contenedor-grande-3{
     color: nth($colores, 5);
     background-color: nth($colores, 4);
-    display: grid;
+    @include display(grid);
     grid-template-areas: "cont-sub3 ................  mapa";
     grid-template-columns: 3fr 3fr ;
     grid-column-gap: 100px ;  

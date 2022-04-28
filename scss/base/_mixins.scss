@@ -1,5 +1,8 @@
 @mixin flex($justifyflex) {
-    justify-content: $justifyflex;
+    justify-content: $justifyflex;   
+}
 
+@mixin display ($valordis) {
+    display: $valordis;
     
 }

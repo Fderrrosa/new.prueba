@@ -31,7 +31,7 @@
 
 
 .contiene-todo{
-    display: grid;
+    @include display (grid);
     grid-template-areas: "boton-1 ......................."
                         "boton-1 ........................"
                         "boton-1 ......................."
@@ -72,7 +72,7 @@
     width: 20px;
     margin: 10%;
     padding: auto;
-    display: grid;
+    @include display (grid);
     grid-template-columns: 3fr 3fr 3fr;
     height: 50px;
     grid-column-gap: 40px; 

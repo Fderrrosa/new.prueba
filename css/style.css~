@@ -1,10 +1,14 @@
-/* Error: Undefined mixin.
- *    ,
- * 21 |     @include flex($justifyflex);
- *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss\base\_header.all.scss 21:5  @import
- *   scss\style.scss 1:9              root stylesheet */
+/* Error: Missing argument $list.
+ *   ,--> scss\intento.media\draft.scss
+ * 6 |             color: nth($colores: 1);
+ *   |                    ^^^^^^^^^^^^^^^^ invocation
+ *   '
+ *   ,--> sass:list
+ * 1 | @function nth($list, $n) {
+ *   |           ============== declaration
+ *   '
+ *   scss\intento.media\draft.scss 6:20  @import
+ *   scss\style.scss 6:9                 root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +18,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 21 \2502      @include flex($justifyflex);\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\base\\_header.all.scss 21:5  @import\a   scss\\style.scss 1:9              root stylesheet";
+  content: "Error: Missing argument $list.\a   \250c \2500 \2500 > scss\\intento.media\\draft.scss\a 6 \2502              color: nth($colores: 1);\d\a   \2502                     ^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > sass:list\a 1 \2502  @function nth($list, $n) {\a   \2502            \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   scss\\intento.media\\draft.scss 6:20  @import\a   scss\\style.scss 6:9                 root stylesheet";
 }

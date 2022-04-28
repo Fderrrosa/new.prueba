@@ -1,7 +1,7 @@
 @import '../../base/listas';
 
 .cont-grande{
-    display: grid;
+    @include display(grid);
     grid-template-areas: "centro-1 centro-1 parte-derecha"
                           "centro-2 centro-2 parte-derecha"
                           "footer footer parte-derecha";

@@ -1,13 +1,14 @@
 
 @import 'listas';
+@import '../base/mixins';
 
 .home {
     background-color: nth($colores, 1); 
 }
 
 .principal{ 
-    display: flex;
-    justify-content: space-between;
+    @include display (flex);
+    @include flex(space-between);
     width: 100%;
     height: 200px; 
     background-color: nth($colores, 4);
@@ -17,13 +18,13 @@
     color: mediumaquamarine;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
-    display: flex;
-    @include flex($justifyflex);
+    @include display (flex);
+    @include flex(space-around);
 } 
 
 .secciones{
-    display: flex;
-    justify-content: space-around;
+    @include display (flex);
+    @include flex (space-around);
     padding: 50px; 
     list-style: none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
