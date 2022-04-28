@@ -18,7 +18,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     display: flex;
-    justify-content: space-around;
+    @include flex($justifyflex);
 } 
 
 .secciones{

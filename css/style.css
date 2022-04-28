@@ -238,9 +238,9 @@
 
 .links-dea {
     display: none;
-    position: absolute;
+    position:absolute;
     background-color: mediumaquamarine;
-    min-width: 160px;
+    min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     right: 0;
 }
@@ -265,6 +265,13 @@
 .contenedor-grande-3{
   display: block;
 }
+
+.sub-mayor{
+  display: block;
+}
+
+
+
 }
 
 /*# sourceMappingURL=style.css.map */
