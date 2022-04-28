@@ -41,10 +41,8 @@
 
 .lista{
     text-align: left;  
-    color: nth($colores, 4);
     font-family: 'Times New Roman', Times, serif;
     list-style: none;
-    
 }
 
 
@@ -55,14 +53,10 @@
     margin: 30px;
     color: nth($colores, 4);  
     grid-area: boton-1;
-    border: 3px solid nth($colores, 3 );
-    background-color: nth($colores, 5);
     border-top-left-radius: 20px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 30px;
-    
-
 }
 
 
