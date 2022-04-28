@@ -200,12 +200,13 @@
 
 .intento {
   width: 20px;
-  margin: 10%;
-  padding: auto;
+  margin: 9%;
+  padding: 5%;
   display: grid;
   grid-template-columns: 3fr 3fr 3fr;
-  height: 50px;
   grid-column-gap: 40px;
+ 
+  
 }
 
 
