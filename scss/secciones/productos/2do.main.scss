@@ -1,14 +1,12 @@
 @import '../../base/listas';
+@import '../../base/mixins';
 
 
-.prueba{
-    font-weight: 100;
-    margin: 50px;
-    font-size: x-large;
-}
+
 .sub-mayor {
-   
-    text-align: center;
+    display: flex;
+    @include flex(center);
+   text-align: center;
     color: nth($colores, 4);
     font-family: 'Times New Roman', Times, serif
 }

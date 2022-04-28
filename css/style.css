@@ -134,8 +134,17 @@
 }
 
 
+/*TERMINA FOOTER DE TODAS LAS SECCIONES*/
+
+
+
+
+
+/*COMIENZA MAIN PRODUCTOS*/
 
 .sub-mayor {
+  display: flex;
+  justify-content: center;
   text-align: center;
   color: black;
   font-family: "Times New Roman", Times, serif;
@@ -199,6 +208,16 @@
   grid-column-gap: 40px;
 }
 
+
+/*TERMINA MAIN PRODUCTOS*/
+
+
+
+
+
+
+
+/*COMIENZA MAIN SERVICIOS*/
 .cont-grande {
   display: grid;
   grid-template-areas: "centro-1 centro-1 parte-derecha" "centro-2 centro-2 parte-derecha" "footer footer parte-derecha";
@@ -234,6 +253,14 @@
   border: 1px solid black;
 }
 
+
+
+/*TERMINA MAIN SERVICIOS*/
+
+
+
+
+/*COMIENZA MEDIA*/
 @media screen and (max-width: 1060px) {
 
   .secciones-2{
