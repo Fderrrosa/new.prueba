@@ -219,50 +219,10 @@
   border: 1px solid black;
 }
 
-@media screen and (max-width: 1060px) {
-  .secciones-2 {
-    color: mediumaquamarine;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-
-  .secciones {
-    position: relative;
-    display: inline-block;
-  }
-
-  .links-dea {
-    display: none;
-    position: absolute;
-    background-color: mediumaquamarine;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    right: 0;
-  }
-
-  .secciones-2 a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .secciones-2 a:hover {
-    background-color: aliceblue;
-  }
-
-  .secciones:hover .links-dea {
-    display: block;
-  }
-
-  .contenedor-2 {
-    display: block;
-  }
-
-  .contenedor-grande-3 {
-    display: block;
+@media screen and (min-width: 566px) {
+  .video {
+    width: 30em;
+    height: 15em;
   }
 }
 
