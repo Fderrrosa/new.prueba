@@ -1,10 +1,28 @@
 
 
+
 /*COMIENZA HEADER DE TODAS LA SECCIONES*/
 .home {
   background-color: mediumaquamarine;
 }
 
+/*Estilo de la barra */ /* CAMBIAR A SASS */
+.bg-dark{
+  background-color: black !important;
+}
+
+.navbar-light .navbar-toggler {
+  color: white !important;
+  border-color: rgba(0,0,0,.1) !important;
+}
+
+@media screen and (min-width: 566px) {
+  .video{
+    width: 30em;
+    height: 15em;
+  }
+}
+/*
 .principal {
   display: flex;
   justify-content: space-between;
@@ -35,10 +53,10 @@
 }
 
 .links-dea {
-  text-decoration: none;
-  color: mediumaquamarine;
+  text-decoration: none !important;
+  color: mediumaquamarine !important;
 }
-
+*/
 /*TERMINA HEADER DE TODAS LA SECCIONES*/
 
 
@@ -169,11 +187,9 @@
   text-decoration-line: underline;
 }
 
+/* CAMBIAR A SCSS */
 .contiene-todo {
-  display: grid;
-  grid-template-areas: "boton-1 ......................." "boton-1 ........................" "boton-1 ......................." "boton-1 .......................";
-  grid-template-columns: 3fr 3fr 3fr 3fr;
-  grid-column-gap: 100px;
+  display: flex;
 }
 
 .lista {
@@ -196,13 +212,8 @@
 }
 
 .intento {
-  width: 20px;
-  margin: 9%;
-  padding: 5%;
-  display: grid;
-  grid-template-columns: 3fr 3fr 3fr;
-  grid-column-gap: 40px;
- 
+  display: flex;
+  flex-direction: row;
   
 }
 
@@ -259,10 +270,9 @@
 
 
 /*COMIENZA MEDIA*/
-@media screen and (max-width: 1060px){
+/*@media screen and (max-width: 1060px) {
 
-
- .secciones-2{
+  .secciones-2{
     
     color: mediumaquamarine ;
     padding: 16px;
@@ -296,10 +306,7 @@
 
 .secciones:hover .links-dea {
     display: block;
-} 
-
-
-
+}
 
 
 .contenedor-2{
@@ -309,13 +316,17 @@
   display: block;
 }
 
-}
+*/
 
 
 
 
+/*@media screen and (max-width: 848px) {
+  "seccion1"
+  "seccion2"
+  "seccion"
 
-
-
+  a la clase correspondiente le asignas el grid area
+}*/
 
 /*# sourceMappingURL=style.css.map */

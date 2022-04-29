@@ -6,7 +6,7 @@
     background-color: nth($colores, 1); 
 }
 
-.principal{ 
+/*.principal{ 
     @include display (flex);
     @include flex(space-between);
     width: 100%;
@@ -37,4 +37,13 @@
 .links-dea {
     text-decoration: none;
     color: nth($colores, 1);
-}
+}*/
+.bg-dark{
+    background-color:black !important;
+  }
+  
+  .navbar-light .navbar-toggler {
+    color: white !important;
+    border-color: rgba(0,0,0,.1) !important;
+    
+  }
