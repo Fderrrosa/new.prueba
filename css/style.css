@@ -259,9 +259,10 @@
 
 
 /*COMIENZA MEDIA*/
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1060px){
 
-  .secciones-2{
+
+ .secciones-2{
     
     color: mediumaquamarine ;
     padding: 16px;
@@ -295,7 +296,10 @@
 
 .secciones:hover .links-dea {
     display: block;
-}
+} 
+
+
+
 
 
 .contenedor-2{
@@ -305,9 +309,13 @@
   display: block;
 }
 
-
-
-
 }
+
+
+
+
+
+
+
 
 /*# sourceMappingURL=style.css.map */
