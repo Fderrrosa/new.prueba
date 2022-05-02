@@ -2,38 +2,6 @@
   background-color: mediumaquamarine;
 }
 
-/*.principal{ 
-    @include display (flex);
-    @include flex(space-between);
-    width: 100%;
-    height: 200px; 
-    background-color: nth($colores, 4);
-    font-size: 20px; 
-}
-.titulo-header {  
-    color: mediumaquamarine;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-    @include display (flex);
-    @include flex(space-around);
-} 
-
-.secciones{
-    @include display (flex);
-    @include flex (space-around);
-    padding: 50px; 
-    list-style: none;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-
-}
-.secciones-2 {
-    margin: 0 1em 0 1em; 
-}
-
-.links-dea {
-    text-decoration: none;
-    color: nth($colores, 1);
-}*/
 .bg-dark {
   background-color: black !important;
 }
@@ -41,6 +9,10 @@
 .navbar-light .navbar-toggler {
   color: white !important;
   border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.title {
+  margin: 100px;
 }
 
 .carrousel-texto {
