@@ -152,7 +152,7 @@
 }
 
 /* CAMBIAR A SCSS */
-.contiene-todo {
+/*.contiene-todo {
   display: flex;
 }
 
@@ -174,12 +174,14 @@
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 70px;
 }
+*/
 
-.intento {
-  display: flex;
-  flex-direction: row;
-  
-}
+
+.btn-group-vertical {
+  color: black !important;
+  margin: 50px;
+ }
+
 
 
 /*TERMINA MAIN PRODUCTOS*/

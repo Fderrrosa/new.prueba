@@ -27,7 +27,7 @@
     text-decoration-line: underline;
 }
 
-
+/*
 .contiene-todo{
     @include display (grid);
     grid-template-areas: "boton-1 ......................."
@@ -38,7 +38,6 @@
     grid-column-gap: 100px;
     
 }
-
 .lista{
     text-align: left;  
     font-family: 'Times New Roman', Times, serif;
@@ -57,14 +56,9 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 30px;
-}
-
+}*/
 
 .intento{
-    width: 20px;
-    margin: 9%;
-    padding: 5%;
-    @include display (grid);
-    grid-template-columns: 3fr 3fr 3fr;
-    grid-column-gap: 40px; 
+    display: flex;
+    align-content: flex-start;
 }
