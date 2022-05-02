@@ -7,8 +7,8 @@
 }
 
 .navbar-light .navbar-toggler {
-  color: white !important;
-  border-color: rgba(0, 0, 0, 0.1) !important;
+  color: aliceblue !important;
+  border-color: black !important;
 }
 
 .title {

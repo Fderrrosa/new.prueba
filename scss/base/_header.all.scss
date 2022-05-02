@@ -4,16 +4,17 @@
 
 .home {
     background-color: nth($colores, 1); 
+    
 }
 
 
 .bg-dark{
-    background-color:black !important;
+    background-color: nth($colores, 4)!important;
   }
   
   .navbar-light .navbar-toggler {
-    color: white !important;
-    border-color: rgba(0,0,0,.1) !important;
+    color: nth($colores, 5) !important;
+    border-color: nth($colores, 4)!important;
     
   }
   .title{
