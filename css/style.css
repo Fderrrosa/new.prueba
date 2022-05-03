@@ -267,9 +267,7 @@ position: absolute;}
 }
 
 
-.probando{
-  
-}
+
 
 
 
@@ -295,8 +293,36 @@ position: absolute;}
     height: 15em;*/
     display: block;
   }
+
+    .probando{
+      display: flex;
+    }
+    .probando-2{
+      display: flex;
+      flex-direction:column;
+    }
+
+    .contenedor-grande-3{
+      display: block;
+    }
+
+    .cont-grande{
+      display: block;
+    }   
+
 }
 
+
+
+
+@media screen and (max-width: 580px){
+  
+
+  .grande{
+    display: flex ;
+    
+  }
+}
 
 
 /*
