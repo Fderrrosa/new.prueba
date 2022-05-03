@@ -196,10 +196,13 @@
 
 .probando{
   grid-area: probando;
-}
+position: absolute;}
 
 .probando-2{
   grid-area: probando-2;
+  margin: 50px;
+  display: flex;
+  flex-direction:initial;
 }
 
 
@@ -239,7 +242,8 @@
   font-size: larger;
   font-family: "Times New Roman", Times, serif;
   text-decoration-line: none;
-  transition: 2s linear;
+  transition: 3s linear;
+  margin: 10px;
 }
 
 .tarot {
@@ -257,10 +261,11 @@
 
 /*COMIENZA MEDIA*/
 
-@media screen and (min-width: 566px) {
+@media screen and (max-width: 830px) {
   .video{
     width: 30em;
     height: 15em;
+    display: block;
   }
 }
 

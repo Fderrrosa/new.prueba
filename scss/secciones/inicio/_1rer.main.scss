@@ -49,3 +49,11 @@
     margin: 5em;
     font-family: 'Times New Roman', Times, serif;
 }
+
+@media screen and (max-width: 830px) {
+    .video{
+      width: 30em;
+      height: 15em;
+      display: block;
+    }
+  }
