@@ -1,18 +1,228 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import '../../base/listas';
- *   |         ^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\base\_footer.all.scss 1:9  @import
- *   scss\style.scss 3:9             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import '../../base/listas';\d\a   \2502          ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\base\\_footer.all.scss 1:9  @import\a   scss\\style.scss 3:9             root stylesheet";
+.home {
+  background-color: mediumaquamarine;
 }
+
+.bg-dark {
+  background-color: black !important;
+}
+
+.navbar-light .navbar-toggler {
+  color: aliceblue !important;
+  border-color: black !important;
+}
+
+.title {
+  margin: 100px;
+}
+
+.carrousel-texto {
+  color: black;
+}
+
+.cont-imagen {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.contenedor-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.titulo-main {
+  width: 100px;
+  height: 100px;
+  margin: 1em;
+  text-decoration-line: underline;
+}
+
+.otro-titulo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  font-style: italic;
+}
+
+.info-piedras:hover {
+  background-color: rgba(188, 162, 44, 0.708);
+  border-radius: 10px;
+  font-size: large;
+  font-style: italic;
+  transform: scale(1);
+  transition: all 2s;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.texto-video {
+  font-size: 1rem;
+  margin: 5em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media screen and (max-width: 830px) {
+  .video {
+    /*width: 30em;
+    height: 15em;*/
+    display: block;
+  }
+}
+.segundo-titulo {
+  width: 100px;
+  height: 100px;
+  margin: 1em;
+  text-decoration-line: underline;
+  color: mediumaquamarine;
+}
+
+.cont-sub3 {
+  grid-area: cont-sub3;
+}
+
+.mapa {
+  grid-area: mapa;
+}
+
+.contenedor-grande-3 {
+  color: aliceblue;
+  background-color: black;
+  display: grid;
+  grid-template-areas: "cont-sub3 ................  mapa";
+  grid-template-columns: 3fr 3fr;
+  grid-column-gap: 100px;
+}
+
+.parrafo {
+  font-size: medium;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.footer-mapa {
+  font-family: "Times New Roman", Times, serif;
+  text-decoration-line: underline;
+}
+
+.sub-mayor {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.caja-grande {
+  text-align: right;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.caja-mediana {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  margin: 30px;
+}
+
+.segundo-sub {
+  text-align: left;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration-line: underline;
+}
+
+/*
+.contiene-todo{
+    @include display (grid);
+    grid-template-areas: "boton-1 ......................."
+                        "boton-1 ........................"
+                        "boton-1 ......................."
+                        "boton-1 .......................";
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-column-gap: 100px;
+
+}
+.lista{
+    text-align: left;  
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+}
+
+
+.boton-1{
+    text-decoration: none;
+    border-width: initial;
+    padding-bottom: 10px;
+    margin: 30px;
+    color: nth($colores, 4);  
+    grid-area: boton-1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 30px;
+}*/
+.grande {
+  display: grid;
+  grid-template-areas: "probando probando-2 probando-2" "probando probando-2 probando";
+  grid-template-columns: 3fr 3fr;
+  grid-column-gap: 5px;
+}
+
+.probando {
+  grid-area: probando;
+  position: absolute;
+}
+
+.probando-2 {
+  grid-area: probando-2;
+  margin: 50px;
+  display: flex;
+  flex-direction: initial;
+}
+
+.btn-group-vertical {
+  color: black !important;
+  margin: 30px;
+}
+
+.cont-grande {
+  display: grid;
+  grid-template-areas: "centro-1 centro-1 parte-derecha" "centro-2 centro-2 parte-derecha" "footer footer parte-derecha";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+}
+
+.centro-1 {
+  grid-area: centro-1;
+  text-align: justify;
+  margin: 10%;
+}
+
+.centro-2 {
+  grid-area: centro-2;
+  text-align: justify;
+  margin: 10%;
+}
+
+.parte-derecha:hover {
+  grid-area: parte-derecha;
+  text-align: justify;
+  text-decoration: underline;
+  font-size: larger;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration-line: none;
+  transition: 3s linear;
+  margin: 10px;
+}
+
+.tarot {
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 566px) {
+  .video {
+    width: 30em;
+    height: 15em;
+  }
+}
+
+/*# sourceMappingURL=style.css~.map */

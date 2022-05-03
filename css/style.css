@@ -53,7 +53,7 @@
 }
 
 .info-piedras:hover {
-  background-color: rgba(188, 162, 44, 0.708);
+  background-color: rgba(8, 7, 1, 0.708);
   border-radius: 10px;
   font-size: large;
   font-style: italic;
@@ -256,15 +256,43 @@ position: absolute;}
 
 /*TERMINA MAIN SERVICIOS*/
 
+/*COMIENZA MAIN NOSOTROS*/
+.otro-sub{
+  font-family: 'Times New Roman', Times, serif; 
+  padding: 20px;
+  color: black;
+}
+.nosotros-1{
+   text-decoration: underline;
+}
+
+
+.probando{
+  
+}
+
+
+
+
+
+/*COMIENZA MAIN INFORMACION*/
+
+.main-info{
+  font-family: 'Times New Roman', Times, serif;
+  padding: 30px;
+}
+.prince{
+  text-decoration: underline;
+}
 
 
 
 /*COMIENZA MEDIA*/
 
 @media screen and (max-width: 830px) {
-  .video{
-    width: 30em;
-    height: 15em;
+  .contenedor-2{
+    /*width: 30em;
+    height: 15em;*/
     display: block;
   }
 }
