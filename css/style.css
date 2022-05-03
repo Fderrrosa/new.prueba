@@ -179,8 +179,28 @@
 
 .btn-group-vertical {
   color: black !important;
-  margin: 50px;
+  margin: 30px;
  }
+
+
+
+
+
+ .grande{
+  display: grid;
+  grid-template-areas: "probando probando-2 probando-2"
+                      "probando probando-2 probando";
+  grid-template-columns: 3fr 3fr;
+  grid-column-gap: 5px;                    
+}
+
+.probando{
+  grid-area: probando;
+}
+
+.probando-2{
+  grid-area: probando-2;
+}
 
 
 

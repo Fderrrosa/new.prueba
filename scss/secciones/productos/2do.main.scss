@@ -58,7 +58,25 @@
     border-bottom-left-radius: 30px;
 }*/
 
-.intento{
-    display: flex;
-    align-content: flex-start;
+.grande{
+    display: grid;
+    grid-template-areas: "probando probando-2 probando-2"
+                        "probando probando-2 probando";
+    grid-template-columns: 3fr 3fr;
+    grid-column-gap: 5px;                    
 }
+
+.probando{
+    grid-area: probando;
+    margin: 0%;
+}
+
+.probando-2{
+    grid-area: probando-2;
+    color: bisque !important;
+}
+
+.btn-group-vertical {
+    color: black !important;
+    margin: 30px;
+   }
