@@ -44,13 +44,14 @@
 }
 
 .info-piedras:hover {
-  background-color: rgba(188, 162, 44, 0.708);
+  background-color: black;
   border-radius: 10px;
   font-size: large;
   font-style: italic;
   transform: scale(1);
   transition: all 2s;
   font-family: "Times New Roman", Times, serif;
+  color: azure;
 }
 
 .texto-video {
@@ -218,10 +219,47 @@
   border: 1px solid black;
 }
 
-@media screen and (min-width: 566px) {
-  .video {
-    width: 30em;
-    height: 15em;
+@media screen and (max-width: 830px) {
+  .contenedor-2 {
+    /*width: 30em;
+    height: 15em;*/
+    display: block;
+  }
+
+  .probando {
+    display: flex;
+  }
+
+  .probando-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor-grande-3 {
+    display: block;
+  }
+
+  .cont-grande {
+    display: block;
+  }
+}
+@media screen and (max-width: 580px) {
+  .grande {
+    display: flex;
+  }
+
+  .contenedor-2 {
+    display: block;
+  }
+}
+@media screen and (max-width: 590px) {
+  .probando-2 {
+    margin-top: 15em;
+  }
+}
+@media screen and (max-width: 670px) {
+  .texto.video {
+    max-width: 100%;
   }
 }
 .otro-sub {

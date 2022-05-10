@@ -34,13 +34,15 @@
 }
 
 .info-piedras:hover{
-    background-color: nth($colores, 2);
+    background-color:black;
     border-radius: 10px;
     font-size:large ;
     font-style: italic;
     transform: scale(1);
     transition: all 2s;
     font-family: 'Times New Roman', Times, serif;
+    color: azure;
+
 }
 
 
