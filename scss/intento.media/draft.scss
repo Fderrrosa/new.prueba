@@ -61,3 +61,14 @@
       max-width: 100%;
     }
   }
+
+  @media screen and (max-width: 660px){
+    .texto-video {
+      display: flex;
+    flex-wrap: wrap;
+    }
+  
+    .footer-mapa{
+      display: flex;
+    }
+  }

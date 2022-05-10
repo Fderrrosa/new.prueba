@@ -262,6 +262,16 @@
     max-width: 100%;
   }
 }
+@media screen and (max-width: 660px) {
+  .texto-video {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-mapa {
+    display: flex;
+  }
+}
 .otro-sub {
   font-family: "Times New Roman", Times, serif;
   padding: 20px;
