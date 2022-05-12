@@ -245,6 +245,7 @@ position: absolute;}
   text-decoration-line: none;
   transition: 5s linear;
   margin: 20px;
+  
 }
 
 .tarot {
@@ -252,7 +253,9 @@ position: absolute;}
   max-height: 100%;
   border: 1px solid black;
 }
-
+.texto-servicios{
+  padding-block: 4%;
+}
 
 
 /*TERMINA MAIN SERVICIOS*/

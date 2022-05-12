@@ -219,6 +219,10 @@
   border: 1px solid black;
 }
 
+.texto-servicios {
+  padding-block: 4%;
+}
+
 @media screen and (max-width: 830px) {
   .contenedor-2 {
     /*width: 30em;
