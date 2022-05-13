@@ -276,6 +276,13 @@
     display: flex;
   }
 }
+@media screen and (max-width: 1400px) {
+  .probando-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15rem;
+  }
+}
 .otro-sub {
   font-family: "Times New Roman", Times, serif;
   padding: 20px;

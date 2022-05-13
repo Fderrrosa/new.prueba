@@ -201,7 +201,7 @@ position: absolute;}
 
 .probando-2{
   grid-area: probando-2;
-  margin: 50px;
+  margin: 80px;
   display: flex;
   flex-direction:initial;
 }
@@ -361,6 +361,15 @@ position: absolute;}
 
   .footer-mapa{
     display: flex;
+  }
+}
+
+@media screen and (max-width: 1400px){
+  .probando-2{
+    display: flex;
+   flex-wrap: wrap;
+   margin-top: 15rem;
+   
   }
 }
 
