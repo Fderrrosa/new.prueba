@@ -1,22 +1,7 @@
-/*let inicio = prompt("Bienvenidx a nuestro emprendimiento TransmutArte ; para iniciar te pedimos que ingreses tu partido/localidad para decirte cual es el costo de envio que te queda");
 
-
-if(inicio == "palermo"){
-    alert("El costo de envio seria " + 880 + ", bienvenidx a nuestra tienda");
-    console.log("si se cumple la condicion y tu partido/localidad es palermo se va a mostrar este mensaje");
-}  
-
-else if(inicio == "recoleta"){
-    alert("El costo de envio seria " + 1050 + ", bienvenidx a nuestra tienda");
-    console.log("si se cumple esta condicion y tu partido/localidad recoleta se va a mostrar este mensaje");
-    
-}
-
-else{
-    alert("Lo lamento, hay un error con el partido/localidad ingresado");
-    console.log("si no se cumple ninguna de las condiciones, se va a mostrar este mensaje")
-}*/
-
+//SALUDAMOS A LA PERSONA Y LE PEDIMOS QUE NOS INDIQUE SU NOMBRE
+//DESPUES VOLVEMOS A SALUDAR A LA PERSONA PERO CON EL NOMBRE QUE NOS PROPORCIONO
+/*
 alert("Bienvenido a nuestra tienda TransmutArte");
     let nombre = prompt( "Por favor ingrese su nombre ");
     let  mientras = (nombre ===""); {
@@ -24,8 +9,8 @@ alert("Bienvenido a nuestra tienda TransmutArte");
      }
  alert("Bienvenido "+ nombre);
 
-/*LE PEDIMOS QUE NOS SLECCIONE CUAL PRODUCTO QUIERE, CADA UNO TIENE SU NUMERO 
-\n1 \n2 Y ASI, SI LA PERSONA INGRESA 1, SE LE VA A DEVOLVER LO QUE ESTABA EN EL \N1*/
+LE PEDIMOS QUE NOS SLECCIONE CUAL PRODUCTO QUIERE, CADA UNO TIENE SU NUMERO 
+\n1 \n2 Y ASI, SI LA PERSONA INGRESA 1, SE LE VA A DEVOLVER LO QUE ESTABA EN EL \N1
 
 function carritoCompra () {
  let elijaSuProducto = prompt("Por favor elija su piedra. \n1 Piedra Amatista \n2 Piedra Cuarzo Rosa \n3 Piedra turmalina negra")
@@ -72,4 +57,19 @@ console.log(existe)
 
 carritoCompra()
 
+
+*/
+
+
+
+
+//DESAFIO CON DOM
+//LA PERSONA SELECCIONA SU CODIOG POSTAL Y LE SALTA UNA ALERTA DICIENDOLE CUAL ES EL COSTO DE ENVIO QUE TIENE HASTA AHI
+
+let listaDesplegable = document.querySelector(" .lista-desplegable");
+listaDesplegable.addEventListener("change", function()
+
+{alert("El costo de envio seria de $" + this.value);}
+
+)
 
