@@ -2,12 +2,7 @@
 //SALUDAMOS A LA PERSONA Y LE PEDIMOS QUE NOS INDIQUE SU NOMBRE
 //DESPUES VOLVEMOS A SALUDAR A LA PERSONA PERO CON EL NOMBRE QUE NOS PROPORCIONO
 /*
-alert("Bienvenido a nuestra tienda TransmutArte");
-    let nombre = prompt( "Por favor ingrese su nombre ");
-    let  mientras = (nombre ===""); {
-    nombre = prompt("ingrese su nombre");
-     }
- alert("Bienvenido "+ nombre);
+
 
 LE PEDIMOS QUE NOS SLECCIONE CUAL PRODUCTO QUIERE, CADA UNO TIENE SU NUMERO 
 \n1 \n2 Y ASI, SI LA PERSONA INGRESA 1, SE LE VA A DEVOLVER LO QUE ESTABA EN EL \N1
@@ -72,4 +67,20 @@ listaDesplegable.addEventListener("change", function()
 {alert("El costo de envio seria de $" + this.value);}
 
 )
+
+
+
+
+     alert("Bienvenidx a esta tienda holistica hecha con mucho amor!");
+     function names() {
+        let nombresList = [];
+        
+        for (let i = 0; i <= 1; i++) {
+          let nombre = prompt("Ingresa tu nombre:");
+          nombresList.push( nombre ); 
+        }
+        // Con Join podemos unir los item de la lista 
+       document.getElementById("here").innerHTML = nombresList.join("Bienvenido" + " ");}
+      
+      names(); // Iniciar la función
 

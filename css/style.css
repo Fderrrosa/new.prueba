@@ -1,6 +1,15 @@
 
 
 
+#here{
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  color: white; 
+  text-align: left !important;
+  width: 100%;
+  float: left;  
+}
+
 /*COMIENZA HEADER DE TODAS LA SECCIONES*/
 .home {
   background-color: mediumaquamarine;
@@ -395,3 +404,8 @@ position: absolute;}
 }*/
 
 /*# sourceMappingURL=style.css.map */
+
+
+.py-5 {
+     margin: 50px;
+}
