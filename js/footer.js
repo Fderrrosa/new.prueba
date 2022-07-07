@@ -4,6 +4,5 @@
 let listaDesplegable = document.querySelector(" .lista-desplegable");
 listaDesplegable.addEventListener("change", function()
 
-{alert("El costo de envio seria de $" + this.value);}
-
+{Swal.fire("El costo de envio seria de $" + this.value);}
 )
