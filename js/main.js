@@ -1,125 +1,156 @@
 
 
-
-
-//segunda entrega del proyecto(intento)
-
-//carrito
-const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
-addToShoppingCartButtons.forEach((addToCartButton) => {
-  addToCartButton.addEventListener('click', addToCartClicked);
-});
-
-const comprarButton = document.querySelector('.comprarButton');
-comprarButton.addEventListener('click', comprarButtonClicked);
-
-const shoppingCartItemsContainer = document.querySelector(
-  '.shoppingCartItemsContainer'
-);
-
-function addToCartClicked(event) {
-  const button = event.target;
-  const item = button.closest('.item');
-
-  const itemTitle = item.querySelector('.item-title').textContent;
-  const itemPrice = item.querySelector('.item-price').textContent;
-  const itemImage = item.querySelector('.item-image').src;
-
-  addItemToShoppingCart(itemTitle, itemPrice, itemImage);
-}
-
-function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
-  const elementsTitle = shoppingCartItemsContainer.getElementsByClassName(
-    'shoppingCartItemTitle'
-  );
-  for (let i = 0; i < elementsTitle.length; i++) {
-    if (elementsTitle[i].innerText === itemTitle) {
-      let elementQuantity = elementsTitle[
-        i
-      ].parentElement.parentElement.parentElement.querySelector(
-        '.shoppingCartItemQuantity'
-      );
-      elementQuantity.value++;
-      $('.toast').toast('show');
-      updateShoppingCartTotal();
-      return;
-    }
+// Array de productos
+const productos = {
+  producto1: {
+    nombre: 'Papas fritas',
+    precio: '3.50',
+    descripcion: 'Papas frescas preparadas en el momento, caseras, seleccionadas exclusivamente para tener una buena calidad y con un sabor inigualable.',
+    srcImg: 'https://github.com/Fderrrosa/new.prueba/blob/prueba-bootstrap/imagenes/bombas%20carbon.jpg?raw=true'
+  },
+  producto2: {
+    nombre: 'Hamburguesa',
+    precio: '10.00',
+    descripcion: 'La mejor Hamburguesa del mercado, con productos finamente seleccionados, una presentación única y el mejor sabor.',
+    srcImg: 'https://github.com/Fderrrosa/new.prueba/blob/prueba-bootstrap/imagenes/sahumo-4-hierbas-.jpg?raw=true'
+  },
+  producto3: {
+    nombre: 'Pizza',
+    precio: '15.50',
+    descripcion: 'Masa preparada en el local, fermentada el tiempo suficiente para que de una mordida puedas sentir una sensación única de sabor y textura.',
+    srcImg: 'https://github.com/Fderrrosa/new.prueba/blob/prueba-bootstrap/imagenes/tercero.jpeg?raw=true'
+  },
+  producto4: {
+    nombre: 'Completo',
+    precio: '8.50',
+    descripcion: 'Estos son los mejores completos de la ciudad, hechos con el mejor pan y ingredientes finamente seleccionados.',
+    srcImg: 'https://github.com/Fderrrosa/new.prueba/blob/prueba-bootstrap/imagenes/deco.jpeg?raw=true'
+  },
+  producto5: {
+    nombre: 'Taco',
+    precio: '15.00',
+    descripcion: 'El mejor taco del mercado, como si lo preparara uno de los mejores taqueros de México.',
+    srcImg: 'https://github.com/Fderrrosa/new.prueba/blob/prueba-bootstrap/imagenes/turmanlinanegra.jpg?raw=true'
   }
+}
+// Se captura el template de los productos
+const templateProd = document.getElementById('template-prod').content
+const contenedorProd = document.querySelector('.contenedor-productos')
+const fragment = document.createDocumentFragment()
 
-  const shoppingCartRow = document.createElement('div');
-  const shoppingCartContent = `
-  <div class="row shoppingCartItem">
-        <div class="col-6">
-            <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
-                <img src=${itemImage} class="shopping-cart-image">
-                <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">${itemTitle}</h6>
-            </div>
-        </div>
-        <div class="col-2">
-            <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
-                <p class="item-price mb-0 shoppingCartItemPrice">${itemPrice}</p>
-            </div>
-        </div>
-        <div class="col-4">
-            <div
-                class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
-                <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number"
-                    value="1">
-                <button class="btn btn-danger buttonDelete" type="button">X</button>
-            </div>
-        </div>
-    </div>`;
-  shoppingCartRow.innerHTML = shoppingCartContent;
-  shoppingCartItemsContainer.append(shoppingCartRow);
 
-  shoppingCartRow
-    .querySelector('.buttonDelete')
-    .addEventListener('click', removeShoppingCartItem);
 
-  shoppingCartRow
-    .querySelector('.shoppingCartItemQuantity')
-    .addEventListener('change', quantityChanged);
+// TODO LO RELACIONADO A AGREGAR LOS PRODUCTOS AL DOM
+Object.values(productos).forEach( producto => {
+  templateProd.querySelector('.div-info .nombre-prod').textContent = producto.nombre
+  templateProd.querySelector('.div-precio-boton .precio').textContent = producto.precio
+  templateProd.querySelector('.div-info .descripcion-prod').textContent = producto.descripcion
+  templateProd.querySelector('.contenedor-img img').setAttribute('alt', producto.nombre)
+  templateProd.querySelector('.contenedor-img img').setAttribute('src', producto.srcImg)
+  const clone = templateProd.cloneNode(true)
+  fragment.appendChild(clone)
+})
+contenedorProd.appendChild(fragment)
 
-  updateShoppingCartTotal();
+// TODO LO RELACIONADO AL CARRITO DE COMPRA
+let carrito = {}
+const templateTabla = document.getElementById('agregar-producto-al-carro').content
+const tbodyCarrito = document.getElementById('carrito-body')
+const fragmentTabla = document.createDocumentFragment()
+const templateFoot = document.getElementById('tfooter').content
+const tfootCarrito = document.getElementById('footer')
+
+contenedorProd.addEventListener('click', e => {
+  
+  if(e.target.textContent === "Agregar") {
+    setCarrito(e.target.parentElement.parentElement)
+  }
+  e.stopPropagation();
+})
+const setCarrito = e => {
+  const pivoteCarrito = {
+    nombre: e.querySelector('.div-info .nombre-prod').textContent,
+    precio: e.querySelector('.div-precio-boton .precio').textContent,
+    cantidad: 1
+  }
+  if(carrito.hasOwnProperty(pivoteCarrito.nombre)){
+    carrito[pivoteCarrito.nombre].cantidad += 1
+  } else {
+    carrito[pivoteCarrito.nombre] = {...pivoteCarrito}
+  }
+  pintarTabla(carrito)
 }
 
-function updateShoppingCartTotal() {
-  let total = 0;
-  const shoppingCartTotal = document.querySelector('.shoppingCartTotal');
-
-  const shoppingCartItems = document.querySelectorAll('.shoppingCartItem');
-
-  shoppingCartItems.forEach((shoppingCartItem) => {
-    const shoppingCartItemPriceElement = shoppingCartItem.querySelector(
-      '.shoppingCartItemPrice'
-    );
-    const shoppingCartItemPrice = Number(
-      shoppingCartItemPriceElement.textContent.replace('$', ' ')
-    );
-    const shoppingCartItemQuantityElement = shoppingCartItem.querySelector(
-      '.shoppingCartItemQuantity'
-    );
-    const shoppingCartItemQuantity = Number(
-      shoppingCartItemQuantityElement.value
-    );
-    total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
-  });
-  shoppingCartTotal.innerHTML = `${total.toFixed(2)}€`;
+const pintarTabla = objetoCarrito => {
+  Object.values(objetoCarrito).forEach( objeto => {
+    const cloneTabla = templateTabla.cloneNode(true)
+    cloneTabla.getElementById('producto').textContent = objeto.nombre
+    cloneTabla.getElementById('cant').textContent = objeto.cantidad
+    cloneTabla.getElementById('precio-uni').textContent = objeto.precio
+    let precioTotal = parseFloat(objeto.precio) * objeto.cantidad
+    cloneTabla.getElementById('precio-total-prod').textContent = precioTotal.toFixed(2)
+    fragmentTabla.appendChild(cloneTabla)
+  })
+  tbodyCarrito.innerHTML = ''
+  tbodyCarrito.appendChild(fragmentTabla)
+  pintarFooter()
+}
+const pintarFooter = () => {
+  tfootCarrito.innerHTML = ''
+  if(Object.keys(carrito).length === 0) {
+    tfootCarrito.innerHTML = '<tr><td colspan = 4>¡No hay ningun elemento en el carrito!</td></tr>'
+  } else {
+    const total = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + (cantidad * precio),0)
+    templateFoot.getElementById('total-a-pagar').textContent = total.toFixed(2)
+    const cloneFoot = templateFoot.cloneNode(true)
+    fragment.appendChild(cloneFoot)
+    tfootCarrito.appendChild(fragment)
+    //Boton Vaciar carrito
+    const botonVaciar = document.getElementById('vaciar-tabla')
+botonVaciar.addEventListener('click', () => {
+      carrito = {}
+      pintarTabla(carrito)
+      pintarFooter()
+    })
+    
+    //Botones aumentar y disminuir cantidades
+    
+  }
+}
+tbodyCarrito.addEventListener('click', e => {
+  
+  if(e.target.classList.contains('button')) {
+    aumentarDisminuir(e.target)
+  }
+})
+const aumentarDisminuir = boton => {
+  if(boton.textContent === '+'){
+    const indicador = boton.parentElement.parentElement.firstElementChild.textContent
+    Object.values(carrito).forEach( elemento => {
+      if(elemento.nombre === indicador) {
+      carrito[elemento.nombre].cantidad++  
+      }
+    })
+  }
+  if(boton.textContent === '-') {
+    const indicador = boton.parentElement.parentElement.firstElementChild.textContent
+    Object.values(carrito).forEach( elemento => {
+      if(elemento.nombre === indicador) {
+      carrito[elemento.nombre].cantidad--
+        if(carrito[elemento.nombre].cantidad === 0) {
+          delete carrito[elemento.nombre]
+        }
+      }
+    })
+  }
+  pintarTabla(carrito)
+  pintarFooter()
 }
 
-function removeShoppingCartItem(event) {
-  const buttonClicked = event.target;
-  buttonClicked.closest('.shoppingCartItem').remove();
-  updateShoppingCartTotal();
-}
 
-function quantityChanged(event) {
-  const input = event.target;
-  input.value <= 0 ? (input.value = 1) : null;
-  updateShoppingCartTotal();
-}
 
-function comprarButtonClicked() {
-  shoppingCartItemsContainer.innerHTML = '';
-  updateShoppingCartTotal();
-}
+let botonComprar = document.querySelector("#comprar");
+botonComprar.addEventListener("click", function()
+
+{Swal.fire("Su compra fue " + this.value);}
+)
