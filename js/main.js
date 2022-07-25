@@ -148,9 +148,18 @@ const aumentarDisminuir = boton => {
 }
 
 
+//BOTON COMPRAR-NO FUNCIONA
+  let hola = document.querySelector('button').click(function(){
 
-let botonComprar = document.querySelector("#comprar");
-botonComprar.addEventListener("click", function()
-
-{Swal.fire("Su compra fue " + this.value);}
-)
+    swal({
+      title: 'Enter email address',
+      input: 'email'
+    }).then(function (email) {
+      swal({
+        type: 'success',
+        html: 'Your email: ' + email
+      })
+    })
+      
+    });
+    
