@@ -62,7 +62,8 @@ function validarForm()
 	if(verificar)
 	{
 		Swal.fire("Enviado");
-		document.contacto_frm.submit();
+		document.getElementById("contacto-frm").reset();
+		//document.contacto_frm.submit();
 	}
 }
 
