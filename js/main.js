@@ -3,33 +3,33 @@
 // Array de productos
 const productos = {
   producto1: {
-    nombre: 'Papas fritas',
+    nombre: 'Bomba Carbon',
     precio: '3.50',
-    descripcion: 'Papas frescas preparadas en el momento, caseras, seleccionadas exclusivamente para tener una buena calidad y con un sabor inigualable.',
+    descripcion: 'Consiste en encender carbones en nuestra casa o negocio para barrer con toda aquella energía dañina para nosotros.',
     srcImg: 'https://github.com/Fderrrosa/new.prueba/blob/prueba-bootstrap/imagenes/bombas%20carbon.jpg?raw=true'
   },
   producto2: {
-    nombre: 'Hamburguesa',
+    nombre: 'Sahumos',
     precio: '10.00',
-    descripcion: 'La mejor Hamburguesa del mercado, con productos finamente seleccionados, una presentación única y el mejor sabor.',
+    descripcion: 'Sahumar es una antigua técnica de limpieza espiritual y energética en la que se utiliza el humo de diversas hierbas y flores —salvia, lavanda, romero, rosas y muchas más',
     srcImg: 'https://github.com/Fderrrosa/new.prueba/blob/prueba-bootstrap/imagenes/sahumo-4-hierbas-.jpg?raw=true'
   },
   producto3: {
-    nombre: 'Pizza',
+    nombre: 'Palo Santo',
     precio: '15.50',
-    descripcion: 'Masa preparada en el local, fermentada el tiempo suficiente para que de una mordida puedas sentir una sensación única de sabor y textura.',
+    descripcion: 'Se utiliza, ya sea en su estado natural o como incienso, para fines energéticos ya que ayuda a limpiar y purificar el ambiente',
     srcImg: 'https://github.com/Fderrrosa/new.prueba/blob/prueba-bootstrap/imagenes/tercero.jpeg?raw=true'
   },
   producto4: {
-    nombre: 'Completo',
+    nombre: 'Concentrado para hornillo',
     precio: '8.50',
-    descripcion: 'Estos son los mejores completos de la ciudad, hechos con el mejor pan y ingredientes finamente seleccionados.',
+    descripcion: 'Los aceites esenciales se suelen utilizar en baños de aromaterapia, en compresas y masajes, mediante inhalación o a través de ambientadores.',
     srcImg: 'https://github.com/Fderrrosa/new.prueba/blob/prueba-bootstrap/imagenes/deco.jpeg?raw=true'
   },
   producto5: {
-    nombre: 'Taco',
+    nombre: 'Piedra Turmalina Negra',
     precio: '15.00',
-    descripcion: 'El mejor taco del mercado, como si lo preparara uno de los mejores taqueros de México.',
+    descripcion: 'Se considera una piedra de referencia para la limpieza, la protección y la transformación.',
     srcImg: 'https://github.com/Fderrrosa/new.prueba/blob/prueba-bootstrap/imagenes/turmanlinanegra.jpg?raw=true'
   }
 }
@@ -113,6 +113,26 @@ botonVaciar.addEventListener('click', () => {
       pintarFooter()
     })
     
+
+
+//boton comprar
+
+const btnComprar = document.querySelector('#btnComprar');
+
+btnComprar.addEventListener("click", () => {
+  Swal.fire({
+      title: "Comprar",
+      text: "¿Estás seguro que quieres realizar esta compra?",
+      showCancelButton: true,
+      confirmButtonText: "SI",
+      cancelButtonText: "CANCELAR",
+  })
+  })
+  
+
+
+
+
     //Botones aumentar y disminuir cantidades
     
   }
@@ -145,21 +165,4 @@ const aumentarDisminuir = boton => {
   }
   pintarTabla(carrito)
   pintarFooter()
-}
-
-
-//BOTON COMPRAR-NO FUNCIONA
-  let hola = document.querySelector('button').click(function(){
-
-    swal({
-      title: 'Enter email address',
-      input: 'email'
-    }).then(function (email) {
-      swal({
-        type: 'success',
-        html: 'Your email: ' + email
-      })
-    })
-      
-    });
-    
+}  
