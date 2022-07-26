@@ -1,5 +1,3 @@
-
-
 // Array de productos
 const productos = {
   producto1: {
@@ -121,11 +119,8 @@ const btnComprar = document.querySelector('#btnComprar');
 
 btnComprar.addEventListener("click", () => {
   Swal.fire({
-      title: "Comprar",
-      text: "¿Estás seguro que quieres realizar esta compra?",
-      showCancelButton: true,
-      confirmButtonText: "SI",
-      cancelButtonText: "CANCELAR",
+    icon: "success",
+    text: "Comprar realizada con exito!",
   })
   })
   
@@ -165,4 +160,4 @@ const aumentarDisminuir = boton => {
   }
   pintarTabla(carrito)
   pintarFooter()
-}  
+}
