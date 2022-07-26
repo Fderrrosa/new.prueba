@@ -685,3 +685,94 @@ img {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+
+
+
+
+
+
+
+/*formulario servicios*/
+
+
+fieldset
+{
+	text-align: center !important;
+	border: thin solid rgb(3, 13, 17);
+	border-radius: 1em;
+  padding: 40px;
+  margin: 40px; 
+}
+
+form
+{
+	margin: .5em auto;
+	width: 80%;
+}
+
+input[type="button"]
+{
+	background: #031f1d;
+	border: thin solid transparent;
+	border-radius: .5em;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 1em;
+	padding: .5em;
+}
+
+input[type="button"]:hover
+{
+	background: rgb(3, 13, 17);
+	border: thin solid #F60;
+	border-radius: 0;
+	color: rgb(3, 13, 17);
+}
+
+input[type="radio"], label
+{
+	cursor: pointer;
+}
+
+input[type="text"], textarea
+{
+	background: rgb(3, 13, 17);
+	border: thin solid rgb(3, 13, 17);
+	border-radius: 1em;
+	color: rgb(3, 13, 17);
+	font-size: 1em;
+	padding: .25em;
+}
+
+input[type="text"]:focus, textarea:focus
+{
+	background: aliceblue;
+}
+
+textarea
+{
+	resize: none;
+}
+
+legend
+{
+	color: rgb(3, 13, 17);
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.cambio
+{
+	-ms-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+:focus
+{
+	box-shadow: .1em .1em .5em rgba(255, 102, 0, 0.849);
+	outline: thin solid #F60;
+}
