@@ -4,31 +4,31 @@
 const productos = {
   producto1: {
     nombre: 'Bomba Carbon',
-    precio: '3.50',
+    precio: '300',
     descripcion: 'Consiste en encender carbones en nuestra casa o negocio para barrer con toda aquella energía dañina para nosotros.',
     srcImg: 'https://github.com/Fderrrosa/new.prueba/blob/prueba-bootstrap/imagenes/bombas%20carbon.jpg?raw=true'
   },
   producto2: {
     nombre: 'Sahumos',
-    precio: '10.00',
+    precio: '450',
     descripcion: 'Sahumar es una antigua técnica de limpieza espiritual y energética en la que se utiliza el humo de diversas hierbas y flores —salvia, lavanda, romero, rosas y muchas más',
     srcImg: 'https://github.com/Fderrrosa/new.prueba/blob/prueba-bootstrap/imagenes/sahumo-4-hierbas-.jpg?raw=true'
   },
   producto3: {
     nombre: 'Palo Santo',
-    precio: '15.50',
+    precio: '550',
     descripcion: 'Se utiliza, ya sea en su estado natural o como incienso, para fines energéticos ya que ayuda a limpiar y purificar el ambiente',
     srcImg: 'https://github.com/Fderrrosa/new.prueba/blob/prueba-bootstrap/imagenes/tercero.jpeg?raw=true'
   },
   producto4: {
     nombre: 'Concentrado para hornillo',
-    precio: '8.50',
+    precio: '850',
     descripcion: 'Los aceites esenciales se suelen utilizar en baños de aromaterapia, en compresas y masajes, mediante inhalación o a través de ambientadores.',
     srcImg: 'https://github.com/Fderrrosa/new.prueba/blob/prueba-bootstrap/imagenes/deco.jpeg?raw=true'
   },
   producto5: {
     nombre: 'Piedra Turmalina Negra',
-    precio: '15.00',
+    precio: '500',
     descripcion: 'Se considera una piedra de referencia para la limpieza, la protección y la transformación.',
     srcImg: 'https://github.com/Fderrrosa/new.prueba/blob/prueba-bootstrap/imagenes/turmanlinanegra.jpg?raw=true'
   }
